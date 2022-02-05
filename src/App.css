@@ -1,0 +1,20 @@
+:root {
+    /* --bg: #f6f6f6; */
+    --bg: #18171C;
+    --black: #000000;
+    --white: #ffffff;
+    --grey: #888595;
+    --light: #f1f1f1;
+    /* --accent: #ff5400; */
+    --accent: #f94144;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+}

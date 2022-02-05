@@ -1,0 +1,57 @@
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+header h1 {
+	color: var(--accent);
+	font-family: "Dela Gothic One";
+	font-size: 80px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+header h3,
+header p {
+	color: var(--light);
+	font-family: "Dela Gothic One";
+	font-size: 36px;
+	/* font-weight: 700; */
+	/* letter-spacing: 1.5px; */
+	/* text-transform: uppercase; */
+	margin-bottom: 30px;
+}
+
+header h3 {
+	font-weight: 800;
+	margin-bottom: 10px;
+}
+
+header button {
+	width: 180px;
+	height: 60px;
+	background-color: transparent;
+	border: 3px solid var(--accent);
+	border-radius: 20px;
+	color: var(--accent);
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: width 0.2s, border 0.2s, color 0.2s, background-color 0.2s,
+		font-size 0.2s, font-weight 0.2s;
+}
+
+header button:hover {
+	width: 200px;
+	border: 3px solid var(--accent);
+	color: var(--white);
+	background-color: var(--accent);
+	font-size: 20px;
+	font-weight: 700;
+}
