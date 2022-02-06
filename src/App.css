@@ -1,5 +1,4 @@
 :root {
-    /* --bg: #f6f6f6; */
     --bg: #18171C;
     --black: #000000;
     --white: #ffffff;
@@ -9,6 +8,23 @@
     /* --accent: #00FFD3; */
     /* --accent: #f94144; */
     --accent: #ff6164;
+}
+
+/* ========== SCROLLBAR ========== */
+::-webkit-scrollbar {
+	width: 15px;
+	margin-left: 5px;
+}
+::-webkit-scrollbar-track {
+	background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+	background: var(--dark);
+    /* border: 8px solid var(--bg); */
+    /* border-radius: 25px; */
+}
+::-webkit-scrollbar-thumb:hover {
+	background: var(--grey);
 }
 
 * {
