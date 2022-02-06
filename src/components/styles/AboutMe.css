@@ -1,0 +1,26 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.about ul {
+    color: var(--grey);
+    line-height: 1.75rem;
+    list-style: none;
+}
+
+.about ul li {
+    width: 50%;
+}
+
+.about ul li::before {
+    content: "⤳ ";
+    color: var(--accent);
+}

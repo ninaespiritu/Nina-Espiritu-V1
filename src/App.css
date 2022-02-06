@@ -3,10 +3,11 @@
     --bg: #18171C;
     --black: #000000;
     --white: #ffffff;
-    --grey: #888595;
+    --grey: #a8a5b6;
     --light: #f1f1f1;
-    /* --accent: #ff5400; */
-    --accent: #f94144;
+    /* --accent: #00FFD3; */
+    /* --accent: #f94144; */
+    --accent: #ff6164;
 }
 
 * {
@@ -15,6 +16,64 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--bg);
+    color: var(--light);
+}
+
+.app {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    margin: 20px 60px;
+}
+
+.app-container {
+    width: 1000px;
+}
+
+section {
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+section h2 {
+	font-family: "Dela Gothic One";
+	font-size: 36px;
+    font-weight: normal;
+	margin-bottom: 30px;
+	margin-bottom: 40px;
+}
+
+section h4 {
+    color: var(--accent);
+    font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+section p {
+    color: var(--grey);
+    line-height: 1.75rem;
+    margin-bottom: 18px;
+}
+
+section p span {
+    color: var(--accent);
+}
+
+@media all and (max-width: 800px) {
+    .app-container {
+        width: 100%;
+    }
 }
