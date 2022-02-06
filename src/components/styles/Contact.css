@@ -1,0 +1,113 @@
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 0 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    height: 60px;
+    color: var(--light);
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid var(--grey);
+    border-radius: 20px;
+    padding: 0 25px;
+    margin-bottom: 30px;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+	color: var(--grey);
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+	outline: none;
+    /* outline-color: var(--light); */
+}
+
+.contact form textarea {
+    resize: none; 
+    min-height: 200px;
+    line-height: 1.75;
+    padding: 25px;
+}
+
+.contact form button {
+    height: 60px;
+	background-color: transparent;
+	border: 3px solid var(--accent);
+	border-radius: 20px;
+	color: var(--accent);
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: color 0.2s, background-color 0.2s,
+		font-size 0.2s, font-weight 0.2s;
+}
+
+.contact form button:hover {
+	color: var(--bg);
+	background-color: var(--accent);
+	font-size: 20px;
+	font-weight: 800;
+} 
+
+
+@media all and (max-width: 1400px) {
+    .contact form {
+        width: 60vw;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    .contact form {
+        width: 100%;
+    }
+}
+
+/* .contact-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 650px;
+    margin: 20px 0;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    padding: 30px;
+    border: 3px solid var(--dark);
+    border-radius: 50%;
+    color: var(--light);
+    background-color: var(--dark);
+    cursor: pointer;
+    transition: color 0.3s, border 0.4s;
+}
+
+.circle:hover {
+    color: var(--accent);
+    border: 3px solid var(--accent);
+}
+
+.circle svg path {
+    fill: var(--accent);
+}
+
+.circle h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 20px;
+} */
