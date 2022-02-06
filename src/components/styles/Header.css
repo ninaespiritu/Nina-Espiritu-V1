@@ -45,13 +45,12 @@ header button {
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 	cursor: pointer;
-	transition: width 0.2s, border 0.2s, color 0.2s, background-color 0.2s,
+	transition: width 0.2s, color 0.2s, background-color 0.2s,
 		font-size 0.2s, font-weight 0.2s;
 }
 
 header button:hover {
 	width: 200px;
-	border: 3px solid var(--accent);
 	color: var(--bg);
 	background-color: var(--accent);
 	font-size: 20px;
