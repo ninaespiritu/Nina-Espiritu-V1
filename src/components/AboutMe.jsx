@@ -3,10 +3,10 @@ import "./styles/AboutMe.css";
 
 const AboutMe = () => {
     return (
-        <section id="AboutMe"className="about">
+        <section id="About"className="about">
             <h4>About Me</h4>
             
-            <h2>Designed turned Developer</h2>
+            <h2>Designer turned Developer</h2>
             
             <p>My name is Nina and I am a Full-Stack Developer with experience in building websites, front-end and back-end applications, and more.</p>
 

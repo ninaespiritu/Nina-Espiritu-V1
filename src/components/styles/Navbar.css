@@ -1,0 +1,36 @@
+nav {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 70px;
+    padding: 0 30px;
+    background: rgba(24, 23, 28, 0.8);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    /* margin: 0 20px; */
+}
+
+nav ul a {
+    color: var(--grey);
+    text-decoration: none;
+    margin: 0 20px;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: var(--accent);
+}

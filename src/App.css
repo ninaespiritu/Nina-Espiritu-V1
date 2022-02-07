@@ -40,6 +40,7 @@ html {
 body {
     background: var(--bg);
     color: var(--light);
+    z-index: 1;
 }
 
 .app {

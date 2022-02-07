@@ -3,11 +3,11 @@ import "./styles/Header.css";
 
 const Header = () => {
     return (
-        <header>
+        <header id="Home">
             <h3>Hello! I am</h3>
             <h1>Nina Espiritu</h1>
             <p>Software Developer &amp; Designer</p>
-            <a href="#AboutMe">
+            <a href="#About">
                 <button>About Me</button>
             </a>
         </header>
