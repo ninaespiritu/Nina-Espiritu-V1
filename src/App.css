@@ -52,7 +52,15 @@ body {
 }
 
 .app-container {
-    width: 1000px;
+    width: 1200px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 18px;
 }
 
 section {
@@ -65,7 +73,6 @@ section {
 
 section h2 {
 	font-family: "Dela Gothic One";
-	font-size: 36px;
     font-weight: normal;
 	margin-bottom: 30px;
 	margin-bottom: 40px;
@@ -73,7 +80,6 @@ section h2 {
 
 section h4 {
     color: var(--accent);
-    font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 2px;
 	text-transform: uppercase;
@@ -91,17 +97,32 @@ section p span {
 }
 
 
-/* @media all and (max-width: 1400px) {
+@media all and (max-width: 1400px) {
+    .app {
+        margin: 20px 100px;
+    }
     .app-container {
         width: 100%;
     }
-} */
+}
 
 @media all and (max-width: 1200px) {
     .app {
         margin: 20px 40px;
     }
-    .app-container {
-        width: 100%;
+}
+
+@media all and (max-width: 800px) {
+    h2 {
+        font-size: 30px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .app {
+        margin: 20px 20px;
     }
 }

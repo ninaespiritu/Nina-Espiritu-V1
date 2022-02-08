@@ -1,8 +1,8 @@
 .socials {
     position: fixed;
-    bottom: 50px;
-    left: 40px;
-    right: auto;
+    bottom: 40px;
+    right: 30px;
+    left: auto;
     /* z-index: 10; */
 }
 
