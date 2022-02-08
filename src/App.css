@@ -48,7 +48,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    margin: 20px 60px;
+    /* margin: 20px 60px; */
 }
 
 .app-container {
@@ -96,10 +96,33 @@ section p span {
     color: var(--accent);
 }
 
+@media all and (min-width: 1920px) {
+    .app p,
+    .app li,
+    .app p span {
+        font-size: 18px;
+        line-height: 2;
+    }
+    .app-container {
+        width: 1400px;
+    }
+    .app h1 {
+        font-size: 100px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+
+}
 
 @media all and (max-width: 1400px) {
     .app {
-        margin: 20px 100px;
+        margin: 0 100px;
     }
     .app-container {
         width: 100%;
@@ -108,7 +131,7 @@ section p span {
 
 @media all and (max-width: 1200px) {
     .app {
-        margin: 20px 40px;
+        margin: 0 40px;
     }
 }
 
@@ -123,6 +146,6 @@ section p span {
 
 @media all and (max-width: 600px) {
     .app {
-        margin: 20px 20px;
+        margin: 0 20px;
     }
 }
