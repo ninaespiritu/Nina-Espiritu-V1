@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ProjectBig from "./ProjectBig";
 import ProjectBigAlt from "./ProjectBigAlt";
 import ProjectSmall from "./ProjectSmall";
 import "./styles/Portfolio.css"
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 // Import Images
 import cats4lyf from "../images/project-cats4lyf.jpg"
@@ -10,8 +13,38 @@ import notion from "../images/project-notion.jpg"
 
 
 const Portfolio = () => {
+
+    const {ref, inView} = useInView({
+        threshold: 0.2
+    });
+    const animatePortfolio = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            animatePortfolio.start({
+                x: 0,
+                opacity: 1,
+                transition: {
+                    duration: 1,
+                }
+            })
+        };
+        if (!inView) {
+            animatePortfolio.start({
+                x: -100,
+                opacity: 0
+            })
+        };
+        console.log("useEffect hook, inView = ", inView);
+    });
+
     return (
-        <section id="Portfolio" className="portfolio">
+        <motion.section 
+            ref={ref} 
+            animate={animatePortfolio} 
+            id="Portfolio" 
+            className="portfolio"
+        >
             <h4>Portfolio</h4>
             <h2>Featured Projects</h2>
             <div className="projects">
@@ -78,7 +111,7 @@ const Portfolio = () => {
                     website="https://github.com/ninaespiritu/CodeNation-Bootcamp"
                 />
             </div>
-        </section>
+        </motion.section>
     )
 };
 
