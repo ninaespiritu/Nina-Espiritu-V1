@@ -1,9 +1,44 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/Contact.css";
 
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 const Contact = () => {
+
+    const {ref, inView} = useInView({
+        threshold: 0.3
+    });
+    const animateContact = useAnimation();
+
+    useEffect(() => {
+        if (inView) {
+            animateContact.start({
+                scale: 1,
+                y: 0,
+                opacity: 1,
+                transition: {
+                    duration: 1,
+                }
+            })
+        };
+        if (!inView) {
+            animateContact.start({
+                scale: 0.8,
+                y: 100,
+                opacity: 0
+            })
+        };
+        console.log("useEffect hook, inView = ", inView);
+    });
+
     return (
-        <section id="Contact" className="contact">
+        <motion.section
+            ref={ref}
+            animate={animateContact}
+            id="Contact"
+            className="contact"
+        >
             <h2>I'd love to hear from you!</h2>
 
             {/* <div className="contact-type">
@@ -26,7 +61,7 @@ const Contact = () => {
                 <textarea placeholder="Your message" rows="15" id="contact-message" />
                 <button type="submit">Send</button>
             </form>
-        </section>
+        </motion.section>
     )
 };
 

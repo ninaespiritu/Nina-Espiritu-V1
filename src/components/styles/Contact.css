@@ -12,10 +12,11 @@
     font-family: "Work Sans", sans-serif;
     font-size: 16px;
     background-color: transparent;
-    border: 2px solid var(--grey);
-    border-radius: 20px;
+    border: none;
+    border-bottom: 2px solid var(--grey);
+    /* border-radius: 20px; */
     padding: 0 25px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .contact form input::placeholder,
@@ -31,7 +32,7 @@
 
 .contact form textarea {
     resize: none; 
-    min-height: 200px;
+    min-height: 150px;
     line-height: 1.75;
     padding: 25px;
 }
@@ -47,6 +48,7 @@
 	font-weight: 600;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
+    margin-top: 20px;
 	cursor: pointer;
 	transition: color 0.2s, background-color 0.2s,
 		font-size 0.2s, font-weight 0.2s;
