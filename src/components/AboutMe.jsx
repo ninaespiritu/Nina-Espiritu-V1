@@ -10,7 +10,6 @@ const AboutMe = () => {
         threshold: 0.2
     });
     const animateAbout = useAnimation();
-    const animateAboutText = useAnimation();
 
     useEffect(() => {
         if (inView) {
@@ -22,28 +21,15 @@ const AboutMe = () => {
                     staggerChildren: 0.2,
                 }
             })
-            // animateAboutText.start({
-            //     y: 0,
-            //     opacity: 1,
-            //     transition: {
-            //         duration: 1,
-            //         ease: "easeOut"
-            //     }
-                
-            // })
         };
         if (!inView) {
             animateAbout.start({
                 x: 100,
                 opacity: 0
             })
-            // animateAboutText.start({
-            //     y: 50,
-            //     opacity: 0
-            // })
         };
         console.log("useEffect hook, inView = ", inView);
-    }, [inView]);
+    });
 
 
 
@@ -59,20 +45,20 @@ const AboutMe = () => {
     //     }
     // }
 
-    // const animateAboutText = {
-    //     initial: {
-    //         y: 50,
-    //         opacity: 0
-    //     },
-    //     animate: {
-    //         y: 0,
-    //         opacity: 1,
-    //         transition: {
-    //             duration: 1,
-    //             ease: "easeOut"
-    //         }
-    //     }
-    // }
+    const animateAboutText = {
+        initial: {
+            y: 50,
+            opacity: 0
+        },
+        animate: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                duration: 1,
+                ease: "easeOut"
+            }
+        }
+    }
 
     return (
         <motion.section 
