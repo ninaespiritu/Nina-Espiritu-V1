@@ -29,6 +29,13 @@
 
 @media all and (max-width: 1200px) {
     .socials {
-        display: none;
+        position: relative;
+        right: 0;
+        bottom: 25px;
+    }
+    .socials-links {
+        flex-direction: row;
+        height: auto;
+        width: 200px;
     }
 }

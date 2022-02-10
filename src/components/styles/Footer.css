@@ -1,0 +1,14 @@
+footer {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 2;
+    text-align: center;
+}

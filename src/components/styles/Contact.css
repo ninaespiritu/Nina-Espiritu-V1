@@ -80,7 +80,10 @@
 
 
 .contact {
-    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin: 20px 0;
 }
 
 .contact-area {
@@ -147,6 +150,6 @@
 @media all and (max-width: 560px) {
     .contact-area {
         flex-direction: column;
-        margin: 0;
+        margin: 0 0 40px;
     }
 }
