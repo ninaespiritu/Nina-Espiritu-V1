@@ -1,4 +1,4 @@
-.contact form {
+/* .contact form {
     display: flex;
     flex-direction: column;
     width: 60vw;
@@ -14,7 +14,6 @@
     background-color: transparent;
     border: none;
     border-bottom: 2px solid var(--grey);
-    /* border-radius: 20px; */
     padding: 0 25px;
     margin-bottom: 10px;
 }
@@ -27,7 +26,6 @@
 .contact form input:focus,
 .contact form textarea:focus {
 	outline: none;
-    /* outline-color: var(--light); */
 }
 
 .contact form textarea {
@@ -78,44 +76,73 @@
     .contact form {
         width: 100%;
     }
-}
+} */
 
-/* .contact-type {
+
+.contact-area {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 650px;
-    margin: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    width: 580px;
+    margin: 10px 0 0;
 }
 
-.circle {
+.contact-type {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 250px;
-    height: 250px;
+    width: 280px;
     padding: 30px;
-    border: 3px solid var(--dark);
-    border-radius: 50%;
-    color: var(--light);
-    background-color: var(--dark);
+    color: var(--dark);
     cursor: pointer;
-    transition: color 0.3s, border 0.4s;
+    transition: width 0.3s;
 }
 
-.circle:hover {
-    color: var(--accent);
-    border: 3px solid var(--accent);
-}
-
-.circle svg path {
+.contact-type svg path {
     fill: var(--accent);
 }
 
-.circle h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 20px;
-} */
+.contact-type button {
+	width: 180px;
+	height: 60px;
+    margin-top: 40px;
+	background-color: transparent;
+	border: 3px solid var(--accent);
+	border-radius: 20px;
+	color: var(--accent);
+	font-family: "Work Sans", sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: width 0.2s, color 0.2s, background-color 0.2s,
+		font-size 0.2s, font-weight 0.2s;
+}
+
+.contact-type button:hover {
+	width: 200px;
+	color: var(--bg);
+	background-color: var(--accent);
+	font-size: 20px;
+	font-weight: 800;
+}
+
+@media all and (max-width: 800px) {
+    .contact-area {
+        width: 460px;
+    }
+    .contact-type {
+        width: 220px;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .contact-area {
+        flex-direction: column;
+        margin: 0;
+    }
+}
