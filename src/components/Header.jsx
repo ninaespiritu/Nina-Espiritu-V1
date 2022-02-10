@@ -39,7 +39,7 @@ const Header = () => {
         initial: {
             x: 70,
             opacity: 0,
-            scale: 1.15
+            scale: 1.25
         },
         animate: {
             x: 0,

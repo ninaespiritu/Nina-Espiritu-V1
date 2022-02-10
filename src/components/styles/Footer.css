@@ -7,7 +7,7 @@ footer {
 }
 
 footer p {
-    color: var(--grey);
+    color: var(--greyer);
     font-size: 14px;
     line-height: 2;
     text-align: center;

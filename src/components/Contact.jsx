@@ -40,7 +40,8 @@ const Contact = () => {
             className="contact"
         >
             <h4>Contact</h4>
-            <h2>I'd love to hear from you!</h2>
+            <h2>Get in Touch</h2>
+            <p>My inbox is always open. <br /> Whether you have a question or just want to say hello, I'd love to hear from you!</p>
 
             <div className="contact-area">
                 <div className="contact-type">

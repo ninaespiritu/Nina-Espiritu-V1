@@ -59,7 +59,7 @@ const Portfolio = () => {
                 <ProjectBigAlt
                     image={notion}
                     title="Notion Website Clone"
-                    desc="Cloning Notion's website design as close to identical as possible, using only HTML and CSS. This was one of my first projects while learning how to code."
+                    desc="Cloning Notion's website design as close to identical as possible, using only HTML and CSS. This is one of my first projects while learning how to code."
                     skills="HTML / CSS"
                     github="https://github.com/ninaespiritu/Notion-Website-Clone"
                     website="https://ninaespiritu.github.io/Notion-Website-Clone/"

@@ -1,9 +1,12 @@
 :root {
-    --bg: #18171C;
+    /* --bg: #18171c; */
+    --bg: #0e0e11;
     --black: #000000;
     --white: #ffffff;
     --grey: #a8a5b6;
-    --dark: #25232b;
+    --greyer: #797783;
+    /* --dark: #25232b; */
+    --dark: #1e1d22;
     --light: #f1f1f1;
     /* --accent: #00FFD3; */
     /* --accent: #f94144; */
@@ -88,6 +91,7 @@ section h4 {
 
 section p {
     color: var(--grey);
+    font-size: 17px;
     line-height: 1.75rem;
     margin-bottom: 18px;
 }

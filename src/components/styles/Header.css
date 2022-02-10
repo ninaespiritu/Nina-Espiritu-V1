@@ -18,11 +18,11 @@ header h1 {
 }
 
 header h2 {
-	color: var(--grey);
+	color: var(--light);
 	font-family: "Dela Gothic One", sans-serif;
 	font-size: 36px;
 	font-weight: normal;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 header h3 {
@@ -40,8 +40,9 @@ header button {
 	height: 60px;
 	background-color: transparent;
 	border: 3px solid var(--accent);
-	border-radius: 20px;
+	border-radius: 10px;
 	color: var(--accent);
+	background-color: var(--bg);
 	font-family: "Work Sans", sans-serif;
 	font-size: 18px;
 	font-weight: 600;

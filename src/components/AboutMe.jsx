@@ -24,7 +24,7 @@ const AboutMe = () => {
         };
         if (!inView) {
             animateAbout.start({
-                x: 100,
+                x: -100,
                 opacity: 0
             })
         };
@@ -72,9 +72,9 @@ const AboutMe = () => {
             
             <motion.h2 variants={animateAboutText}>Designer turned Developer</motion.h2>
             
-            <motion.p variants={animateAboutText}>My name is Nina and I am a Full-Stack Developer with experience in building websites, front-end and back-end applications, and more.</motion.p>
+            <motion.p variants={animateAboutText}>My name is Nina and I am an aspiring Software Developer with experience in building websites, front-end and back-end applications, and more.</motion.p>
 
-            <motion.p variants={animateAboutText}>A few months ago, my coding knowledge was next to nothing. I began self-studying web development after being mesmerised by what I could create with code. I enjoy being able to combine both my passion for <span>design</span> and love for <span>coding and problem-solving.</span></motion.p>
+            <motion.p variants={animateAboutText}>A few months ago, my coding knowledge was next to nothing. I began self-studying web development after being mesmerised by what I could create with code. I enjoy being able to combine both my passion for <span>design</span> and my love for <span>coding and problem-solving.</span></motion.p>
 
             <motion.p variants={animateAboutText}>Prior to learning software development, I have experience in several design principles, such as graphic design, digital illustration, and UX/UI design.</motion.p>
 
@@ -85,8 +85,8 @@ const AboutMe = () => {
                     <li>JavaScript</li>
                     <li>React.js</li>
                     <li>Node.js</li>
-                    <li> Responsive Web Design</li>
-                    <li>MongoDB &ampl Mongoose</li>
+                    <li>Responsive Web Design</li>
+                    <li>MongoDB &amp; MySQL</li>
                 </ul>
             </motion.div>
         </motion.section>
