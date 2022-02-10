@@ -79,6 +79,10 @@
 } */
 
 
+.contact {
+    min-height: 100vh;
+}
+
 .contact-area {
     display: flex;
     flex-direction: row;
