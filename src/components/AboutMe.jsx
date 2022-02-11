@@ -17,7 +17,7 @@ const AboutMe = () => {
                 x: 0,
                 opacity: 1,
                 transition: {
-                    duration: 1,
+                    duration: 0.75,
                     staggerChildren: 0.2,
                 }
             })
@@ -45,20 +45,20 @@ const AboutMe = () => {
     //     }
     // }
 
-    const animateAboutText = {
-        initial: {
-            y: 50,
-            opacity: 0
-        },
-        animate: {
-            y: 0,
-            opacity: 1,
-            transition: {
-                duration: 1,
-                ease: "easeOut"
-            }
-        }
-    }
+    // const animateAboutText = {
+    //     initial: {
+    //         y: 50,
+    //         opacity: 0
+    //     },
+    //     animate: {
+    //         y: 0,
+    //         opacity: 1,
+    //         transition: {
+    //             duration: 1,
+    //             ease: "easeOut"
+    //         }
+    //     }
+    // }
 
     return (
         <motion.section 
@@ -68,17 +68,17 @@ const AboutMe = () => {
             animate={animateAbout}
             id="About"className="about"
         >
-            <motion.h4 variants={animateAboutText}>About Me</motion.h4>
+            <h4>About Me</h4>
             
-            <motion.h2 variants={animateAboutText}>Designer turned Developer</motion.h2>
+            <h2>Designer turned Developer</h2>
             
-            <motion.p variants={animateAboutText}>My name is Nina and I am an aspiring Software Developer with experience in building websites, front-end and back-end applications, and more.</motion.p>
+            <p>My name is Nina and I am an aspiring Software Developer with experience in building websites, front-end and back-end applications, and more.</p>
 
-            <motion.p variants={animateAboutText}>A few months ago, my coding knowledge was next to nothing. I began self-studying web development after being mesmerised by what I could create with code. I enjoy being able to combine both my passion for <span>design</span> and my love for <span>coding and problem-solving.</span></motion.p>
+            <p>A few months ago, my coding knowledge was next to nothing. I began self-studying web development after being mesmerised by what I could create with code. I enjoy being able to combine both my passion for <span>design</span> and my love for <span>coding and problem-solving.</span></p>
 
-            <motion.p variants={animateAboutText}>Prior to learning software development, I have experience in several design principles, such as graphic design, digital illustration, and UX/UI design.</motion.p>
+            <p>Prior to learning software development, I have experience in several design principles, such as graphic design, digital illustration, and UX/UI design.</p>
 
-            <motion.div variants={animateAboutText}>
+            <div>
                 <p><span>My skills include:</span></p>
                 <ul className="about-skills">
                     <li>HTML &amp; CSS</li>
@@ -88,7 +88,7 @@ const AboutMe = () => {
                     <li>Responsive Web Design</li>
                     <li>MongoDB &amp; MySQL</li>
                 </ul>
-            </motion.div>
+            </div>
         </motion.section>
     )
 };

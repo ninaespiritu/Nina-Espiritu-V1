@@ -12,7 +12,9 @@
 }
 
 .about ul {
-    color: var(--grey);
+    color: var(--light);
+    font-family: var(--codetext);
+    font-size: 15px;
     line-height: 1.75rem;
     list-style: none;
 }

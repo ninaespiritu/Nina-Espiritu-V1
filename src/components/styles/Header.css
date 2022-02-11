@@ -9,30 +9,41 @@ header {
 
 header h1 {
 	color: var(--accent);
-	font-family: "Dela Gothic One";
-	font-size: 80px;
-	font-weight: 900;
+	font-family: var(--bigtext);
+	/* font-size: 80px;
+	font-weight: 800; */
+	font-size: 100px;
 	line-height: 1.25;
-	margin: 10px 0 20px;
-	/* margin-bottom: 10px; */
+	/* letter-spacing: -1.5px; */
+	/* margin: 10px 0; */
+	margin-bottom: -10px;
 }
 
 header h2 {
 	color: var(--light);
-	font-family: "Dela Gothic One", sans-serif;
+	font-family: var(--bigtext);
+	font-size: 60px;
+	line-height: 60px;
+	/* font-family: "Dela Gothic One", sans-serif;
 	font-size: 36px;
-	font-weight: normal;
-	margin-bottom: 40px;
+	font-weight: normal; */
+	margin: 0 0 30px;
 }
 
 header h3 {
 	color: var(--light);
-	font-family: "Work Sans", "Dela Gothic One", sans-serif;
+	font-family: var(--codetext);
 	font-size: 20px;
 	font-weight: 600;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin: 0 0 20px;
+}
+
+header p {
+	width: 480px;
+	text-align: end;
+	margin: 0 0 40px;
 }
 
 header button {
@@ -43,7 +54,7 @@ header button {
 	border-radius: 10px;
 	color: var(--accent);
 	background-color: var(--bg);
-	font-family: "Work Sans", sans-serif;
+	font-family: var(--smalltext);
 	font-size: 18px;
 	font-weight: 600;
 	letter-spacing: 1.5px;
@@ -87,18 +98,26 @@ header button:hover {
 }
 
 @media all and (max-width: 1200px) {
-    header h2 {
-		width: 500px;
-		text-align: right;
+	header h1 {
+		font-size: 88px;
 	}
+    /* header h2 {
+		text-align: right;
+	} */
 }
 @media all and (max-width: 1000px) {
 	header h1 {
-		font-size: 60px;
+		font-size: 72px;
+	}
+	header h2 {
+		font-size: 56px;
+		width: 350px;
+	}
+	header p {
+		width: 400px;
 	}
     .header-text {
 		text-align: right;
-		width: 500px;
 	}
 }
 
@@ -107,19 +126,24 @@ header button:hover {
 		justify-content: center;
 		align-items: center;
 	}
-	header h1, header h2 {
+	header h1, header h2, header p {
 		text-align: center;
 	}
+	header h1 {
+		font-size: 64px;
+	}
 	header h2 {
-		font-size: 30px;
+		font-size: 48px;
+		line-height: 48px;
 		width: 100%;
 	}
-	header h3 {
-		font-size: 18px;
+	header p {
+		width: 100%;
 	}
 	.header-text {
 		align-items: center;
 		width: 100%;
+		padding: 0 40px;
 	}
 	.art {
 		display: none;

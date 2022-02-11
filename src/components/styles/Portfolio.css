@@ -57,9 +57,10 @@
 
 .project-big-text h3 {
     color: var(--light);
-    font-size: 32px;
+    font-size: 36px;
+    line-height: 36px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .project-big-text span {
@@ -124,8 +125,9 @@
 
 .project-small-text h3 {
     color: var(--light);
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
+    line-height: 40px;
     margin-bottom: 15px;
 }
 
@@ -134,8 +136,12 @@
 }
 
 .project-small-text span {
-    font-family: monospace;
-    font-size: 15px;
+    font-family: var(--codetext);
+    font-size: 14px;
+}
+
+.project-small-links {
+    margin: 0 0 -10px;
 }
 
 .project-small-links a {
