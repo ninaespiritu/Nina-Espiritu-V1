@@ -14,7 +14,7 @@
 .about ul {
     color: var(--light);
     font-family: var(--codetext);
-    font-size: 15px;
+    font-size: var(--codetext-size);
     line-height: 1.75rem;
     list-style: none;
 }

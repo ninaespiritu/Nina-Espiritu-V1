@@ -75,8 +75,8 @@ nav ul a:hover {
     display: flex;
     flex-direction: row;
     list-style: none;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .nav-item {
@@ -112,7 +112,7 @@ nav ul a:hover {
 
     .nav-item {
         margin: 1rem;
-        font-size: 20px;
+        font-size: 17px;
         justify-content: center;
     }
 

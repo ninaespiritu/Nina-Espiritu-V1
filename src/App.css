@@ -1,9 +1,10 @@
 :root {
-    --bigtext: "NTR", "Poppins", "Dela Gothic One", sans-serif;
-    --smalltext: "NTR", "Work Sans", sans-serif;
+    --bigtext: "Nunito", "NTR", "Poppins", "Dela Gothic One", sans-serif;
+    --smalltext: "Nunito", "NTR", "Work Sans", sans-serif;
     --codetext: "IBM Plex Mono", monospace;
     --bigtext-size: 36px;
-    --bigtext-size: 17px;
+    --smalltext-size: 17px;
+    --codetext-size: 15px;
     --bg: #0e0e11;
     --black: #000000;
     --white: #ffffff;
@@ -71,9 +72,10 @@ h2 {
 	/* font-family: "Dela Gothic One";
     font-weight: normal; */
     font-family: var(--bigtext);
-    font-size: 48px;
-    font-weight: 600;
-	margin-bottom: 20px;
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+	margin: 10px 0 40px;
 }
 
 h4 {
@@ -96,7 +98,7 @@ h4::after {
 
 p {
     color: var(--grey);
-    font-size: 20px;
+    font-size: var(--smalltext-size);
     line-height: 1.75rem;
     margin-bottom: 18px;
 }
@@ -109,7 +111,7 @@ p span {
     .app p,
     .app li,
     .app p span {
-        font-size: 18px;
+        /* font-size: 18px; */
         line-height: 2;
     }
     .app-container {

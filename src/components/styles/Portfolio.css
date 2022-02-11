@@ -1,6 +1,6 @@
 .portfolio {
     padding-top: 100px;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 
 .projects {
@@ -57,10 +57,11 @@
 
 .project-big-text h3 {
     color: var(--light);
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 700;
     line-height: 36px;
-    font-weight: 600;
-    margin-bottom: 24px;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
 }
 
 .project-big-text span {
@@ -125,9 +126,10 @@
 
 .project-small-text h3 {
     color: var(--light);
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 40px;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
     margin-bottom: 15px;
 }
 
@@ -174,17 +176,23 @@
         width: 55%;
         padding: 40px;
     }
-    .project-big-text h3 {
-        font-size: 28px;
-    }
     .project-small-text {
         padding: 40px;
     }
 }
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1000px) {
     .projects-2 {
         grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media all and (max-width: 800px) {
+    .project-big-text h3 {
+        font-size: 24px;
+    }
+    .project-small-text h3 {
+        font-size: 24px;
     }
 }
 

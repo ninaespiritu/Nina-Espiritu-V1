@@ -78,7 +78,7 @@ const Header = () => {
             >
                 <motion.h3 variants={animateOne}>Hello! I am</motion.h3>
                 <motion.h1 variants={animateOne}>Nina Espiritu</motion.h1>
-                <motion.h2 variants={animateOne}>I love to design &amp; code</motion.h2>
+                <motion.h2 variants={animateOne}><span>I love to </span>design &amp; code</motion.h2>
                 <motion.p variants={animateOne}>I am an aspiring Software Developer from the UK. I enjoy building websites, front-end and back-end applications, and anything related to design.</motion.p>
                 <a href="#About">
                     <motion.button variants={animateButton}>About Me</motion.button>
