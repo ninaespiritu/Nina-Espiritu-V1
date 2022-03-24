@@ -8,9 +8,9 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 // Import Images
-import cats4lyf from "../images/project-cats4lyf.jpg"
+import coffeeislife from "../images/project-coffeeislife.png"
 import notion from "../images/project-notion.jpg"
-
+import dicegame from "../images/project-dicegame.png"
 
 const Portfolio = () => {
 
@@ -50,25 +50,40 @@ const Portfolio = () => {
             <h2>Featured Projects</h2>
             <div className="projects">
                 <ProjectBig
-                    image={cats4lyf}
-                    title="Cats4Lyf"
-                    desc="Cats4Lyf is an eCommerce app where users can buy cats, created using The Cat API. This is a group project completed as part of the Code Nation Bootcamp."
-                    skills="JavaScript, React.js"
-                    github="https://github.com/ninaespiritu/Cats4Lyf"
-                    website="#"
+                    image={coffeeislife}
+                    title="Coffee Is Life"
+                    desc="Coffee Is Life is a full-stack MERN application for coffee lovers. Users can signup or login to browse cafes, view information about each shop, and publish their own reviews."
+                    skills="JavaScript, React.js, MongoDB &amp; Mongoose, Express, Node.js"
+                    github="https://github.com/ninaespiritu/Coffee-Is-Life"
+                    website="https://coffeeislife.netlify.app/"
                 />
                 <ProjectBigAlt
                     image={notion}
                     title="Notion Website Clone"
                     desc="Cloning Notion's website design as close to identical as possible, using only HTML and CSS. This is one of my first projects while learning how to code."
-                    skills="HTML / CSS"
+                    skills="HTML &amp; CSS"
                     github="https://github.com/ninaespiritu/Notion-Website-Clone"
                     website="https://ninaespiritu.github.io/Notion-Website-Clone/"
+                />
+                <ProjectBig
+                    image={dicegame}
+                    title="2-Player Dice Game"
+                    desc="A simple dice game for two players, created using vanilla JavaScript."
+                    skills="JavaScript, HTML &amp; CSS"
+                    github="https://github.com/ninaespiritu/DiceGame-TwoPlayers"
+                    website="https://ninaespiritu.github.io/DiceGame-TwoPlayers/"
                 />
             </div>
             
             <h2>Other Work I've Done</h2>
             <div className="projects-2">
+                <ProjectSmall
+                    title="REST API"
+                    desc="A simple REST API with two databases. Includes email validation and password hashing."
+                    skills="MongoDB &amp; Mongoose, Express, JavaScript"
+                    github="https://github.com/ninaespiritu/REST-API"
+                    website="https://github.com/ninaespiritu/REST-API"
+                />
                 <ProjectSmall
                     title="Anime Quote Generator"
                     desc="A random anime quote generator created using the Animechan API"
@@ -89,13 +104,6 @@ const Portfolio = () => {
                     skills="JavaScript, React.js"
                     github="https://github.com/ninaespiritu/Calculator"
                     website="https://ninaespiritu-calculator.netlify.app/"
-                />
-                <ProjectSmall
-                    title="Two-Player Dice Game"
-                    desc="Interactive dice game for two players built with vanilla JavaScript"
-                    skills="JavaScript, HTML &amp; CSS"
-                    github="https://github.com/ninaespiritu/DiceGame-TwoPlayers"
-                    website="https://ninaespiritu.github.io/DiceGame-TwoPlayers/"
                 />
                 <ProjectSmall
                     title="Drum Kit"
