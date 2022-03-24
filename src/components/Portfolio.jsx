@@ -14,35 +14,35 @@ import dicegame from "../images/project-dicegame.png"
 
 const Portfolio = () => {
 
-    const {ref, inView} = useInView({
-        threshold: 0.2
-    });
-    const animatePortfolio = useAnimation();
+    // const {ref, inView} = useInView({
+    //     threshold: 0.2
+    // });
+    // const animatePortfolio = useAnimation();
 
-    useEffect(() => {
-        if (inView) {
-            animatePortfolio.start({
-                x: 0,
-                opacity: 1,
-                transition: {
-                    duration: 0.75,
+    // useEffect(() => {
+    //     if (inView) {
+    //         animatePortfolio.start({
+    //             x: 0,
+    //             opacity: 1,
+    //             transition: {
+    //                 duration: 0.75,
                     
-                }
-            })
-        };
-        if (!inView) {
-            animatePortfolio.start({
-                x: -100,
-                opacity: 0
-            })
-        };
-        console.log("useEffect hook, inView = ", inView);
-    });
+    //             }
+    //         })
+    //     };
+    //     if (!inView) {
+    //         animatePortfolio.start({
+    //             x: -100,
+    //             opacity: 0
+    //         })
+    //     };
+    //     console.log("useEffect hook, inView = ", inView);
+    // });
 
     return (
         <motion.section 
-            ref={ref} 
-            animate={animatePortfolio} 
+            // ref={ref} 
+            // animate={animatePortfolio} 
             id="Portfolio" 
             className="portfolio"
         >

@@ -188,6 +188,17 @@
 }
 
 @media all and (max-width: 800px) {
+    .project-big {
+        flex-direction: column;
+        height: auto;
+    }
+    .project-big-image {
+        height: 400px;
+    }
+    .project-big-image,
+    .project-big-text {
+        width: 100%;
+    }
     .project-big-text h3 {
         font-size: 24px;
     }
